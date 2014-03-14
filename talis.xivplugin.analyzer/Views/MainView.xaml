@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Talis.XIVPlugin.Analyzer.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Controls="clr-namespace:FFXIVAPP.Common.Controls;assembly=FFXIVAPP.Common"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ViewModels="clr-namespace:Talis.XIVPlugin.Analyzer.ViewModels"
+             xmlns:Sample="clr-namespace:Talis.XIVPlugin.Analyzer"
+             xmlns:Properties="clr-namespace:Talis.XIVPlugin.Analyzer.Properties"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <x:Static x:Key="MainViewModel"
+                      Member="ViewModels:MainViewModel.Instance" />
+            <x:Static x:Key="PluginViewModel"
+                      Member="Sample:PluginViewModel.Instance" />
+            <x:Static x:Key="Settings"
+                      Member="Properties:Settings.Default" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot"
+          DataContext="{StaticResource MainViewModel}">
+        <StackPanel />
+    </Grid>
+</UserControl>

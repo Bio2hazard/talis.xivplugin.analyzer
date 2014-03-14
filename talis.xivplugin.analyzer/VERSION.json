@@ -1,0 +1,25 @@
+﻿{
+    "PluginInfo": {
+        "Name": "Talis.XIVPlugin.Analyzer",
+        "Version": "3.0.5186.10503",
+        "Files": [
+            {
+                "Name": "Talis.XIVPlugin.Analyzer.dll",
+                "Location": ""
+            },
+			{
+                "Name": "sqlite3.dll",
+                "Location": ""
+            },
+            {
+                "Name": "Logo.png",
+                "Location": ""
+            },
+            {
+                "Name": "PluginInfo.xml",
+                "Location": ""
+            }
+        ],
+"SourceURI": "https://github.com/Bio2hazard/talis.xivplugin.analyzer/raw/master/distribution/"
+    }
+}
